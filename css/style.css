@@ -45,6 +45,7 @@ body.modal-open {
     --total-black: #000000;
     --primary-link-color: #ffffff;
     --trunsition-dur-and-func: 250ms linear;
+    --svg-color: #AFB1B8;
 }
 
 p {
@@ -180,6 +181,15 @@ a {
     
 }
 
+.contacts-icon{
+    fill: var(--svg-color);
+}
+
+.contacts:hover .contacts-icon,
+.contacts:focus .contacts-icon{
+    fill: var(--blue);
+}
+
 .mail-link {
     text-decoration: none;
 
@@ -192,9 +202,6 @@ a {
     margin-right: 10px;
 }
 
-.mail-link:hover .mail-icon:hover {
-    fill: red;
-}
 
 .telefon-icon {
     width: 10px;
@@ -203,11 +210,6 @@ a {
     
 }
 
-
-.phone-link:hover .telefon-icon,
-.phone-link:focus .telefon-icon {
-    fill: var(--blue);
-}
 
 
 
@@ -302,13 +304,17 @@ a {
     margin-right: 30px;
 }
 
-.features-icon {
-    width: 70px;
-    height: 70px;
+.features-svg{
     background: #F5F4FA;
     border-radius: 4px;
     padding: 25px 100px;
     margin-bottom: 30px;
+}
+
+.features-icon {
+    width: 70px;
+    height: 70px;
+    
 }
 
 .features-subtitle {
@@ -427,7 +433,7 @@ a {
 .team-socials-icon {
     width: 20px;
     height: 20px;
-    fill: #303030;
+    fill: var(--svg-color);
 }
 
 
@@ -509,7 +515,7 @@ a {
     width: 106px;
     height: 60px;
     padding: 16px 32px;
-
+    fill: var(--svg-color);
 }
 
 .regular-clients-link:hover .regular-clients-icon,
