@@ -36,16 +36,15 @@
             <!--contacts section-->
             <ul class="contacts-list">
                 <li class="contacts-item">
-                    <svg class="contacts-icon mail-icon">
-                        <use href="./svg/icons/sprite.svg#icon-envelope"></use>
-                    </svg>
-                    <a href="mailto:info@devstudio.com" class="contacts mail-link">info@devstudio.com</a>
+
+                    <a href="mailto:info@devstudio.com" class="contacts mail-link"><svg class="contacts-icon mail-icon">
+                            <use href="./svg/icons/sprite.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a>
                 </li>
                 <li class="contacts-item">
-                    <svg class="contacts-icon telefon-icon">
-                        <use href="./svg/icons/sprite.svg#icon-smartphone"></use>
-                    </svg>
-                    <a href="tel:+380961111111" class="contacts phone-link"> +38 096 111 11 11</a>
+                    <a href="tel:+380961111111" class="contacts phone-link"> <svg class="contacts-icon telefon-icon">
+                            <use href="./svg/icons/sprite.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
 
@@ -62,7 +61,7 @@
         <section class="hero">
             <div class="hero-box">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса </h1>
-                <button type="button" class="button hero-btn"> Заказать услугу</button>
+                <button class="modal-btn" type="button"> Заказать услугу</button>
             </div>
 
         </section>
@@ -352,24 +351,24 @@
 
 
         <!--footer section-->
-        <div class="container">
-            <a href="#WebStudio" class="footer-logo logo-link">Web<span
-                    class="footer-logo logo-light-link">Studio</span></a>
+        <div class="container footer-container">
+            <a href="#WebStudio" class="footer-logo logo-link">Web<span class="footer-logo logo-light-link">Studio</span></a>
             <address class="footer-address">
                 <ul class="footer-list">
                     <li class="footer-item">
                         <a href="#" class="footer-addr">г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
                     <li class="footer-item">
-                        <a href="mailto:info@example.com" class="contacts mail-link">info@example.com</a>
-                    </li>
+                        <a href="mailto:info@devstudio.com" class="contacts mail-link">info@devstudio.com</a>
                     <li class="footer-item ">
                         <a href="tel:+380991111111" class="contacts phone-link">+38 099 111 11 11</a>
                     </li>
                 </ul>
             </address>
+        </div>
 
-            <h3 class="footer-title"> Присоеденяйтесь </h3>
+        <div class="container footer-soc">
+            <p class="footer-subtitle"> Присоеденяйтесь </p>
             <ul class="footer-socials-list">
                 <li class="footer-socials-item">
                     <a href="#" class="footer-socials-link">
@@ -403,6 +402,7 @@
         </div>
 
     </footer>
+
 </body>
 
 </html>
